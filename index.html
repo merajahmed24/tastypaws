@@ -1,66 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NexGard for Medium Dogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      padding: 2rem;
-      color: #333;
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(to right, #4CAF50, #43A047);
+      color: white;
+      padding: 1.2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 0.95rem;
+      margin-top: 0.3rem;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    h1 {
-      font-size: 2rem;
-      color: #2c3e50;
-    }
-    img {
+      max-width: 600px;
       width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      text-align: center;
     }
     .price {
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-size: 1.6rem;
       color: #e67e22;
+      margin: 1rem 0;
     }
-    .btn {
+    .buy-button {
       display: inline-block;
-      padding: 12px 24px;
-      background: #27ae60;
+      background: #4CAF50;
       color: white;
+      padding: 0.9rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 1.2rem;
+      transition: background 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    .buy-button:hover {
+      background: #388E3C;
+    }
+    .badges {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .section {
+      text-align: left;
+      margin-top: 2rem;
+    }
+    .section h3 {
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    .reviews, .faq {
+      background: #f4f4f4;
+      padding: 1rem;
       border-radius: 6px;
       margin-top: 1rem;
-      transition: background 0.3s ease;
     }
-    .btn:hover {
-      background: #219150;
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 1rem;
+      background: #f5f5f5;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>NexGard for Medium Dogs (10.1–24 lbs) – 6 Chewables</h1>
-    <img src="https://www.budgetpetcare.com/images/products/nexgard-dog-blue.png" alt="Nexgard for Medium Dogs">
-    <p>
-      <strong>Protect your dog from fleas and ticks with NexGard Chewables!</strong><br><br>
-      NexGard is a monthly chew that kills fleas and ticks fast. It’s vet-recommended, safe for medium-sized dogs (10.1–24 lbs), and easy to feed – just one tasty chew a month keeps your pet protected!
-    </p>
-    <p class="price">$74.89 Only</p>
-    <a class="btn" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">Buy Now with Discount</a>
-  </div>
+  <header>
+    <h1>🦴 NexGard for Medium Dogs (10.1–24 lbs)</h1>
+    <p>Protect your pet from fleas and ticks – fast & effective!</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>✅ Vet Recommended Treatment</h2>
+      <p class="price">$74.89 Only</p>
+      <a class="buy-button" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">🛒 Buy Now With Discount</a>
+
+      <div class="badges">
+        🛒 ❤️ ✅ 💯 🔒
+      </div>
+
+      <div class="section reviews">
+        <h3>⭐ Customer Reviews</h3>
+        <p>🌟🌟🌟🌟🌟 “It works great for my dog! No fleas at all!”</p>
+        <p>🌟🌟🌟🌟 “Vet recommended and I'm happy with the result!”</p>
+      </div>
+
+      <div class="section faq">
+        <h3>📌 FAQs</h3>
+        <p><strong>Is it safe?</strong> – ✅ Yes, it's vet-approved and FDA approved.</p>
+        <p><strong>How long does it last?</strong> – ⏳ Each chew protects for 30 days.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 BudgetPetCare.me | All rights reserved.
+  </footer>
 </body>
 </html>
